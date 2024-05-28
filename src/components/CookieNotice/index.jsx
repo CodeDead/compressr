@@ -26,7 +26,12 @@ const CookieNotice = ({ onAccept, onDecline, onClose }) => {
               <Text fz="md" fw={500}>
                 Allow cookies
               </Text>
-              <CloseButton mr={-9} mt={-9} onClick={onClose} />
+              <CloseButton
+                aria-label="Close"
+                mr={-9}
+                mt={-9}
+                onClick={onClose}
+              />
             </Group>
             <Text c="dimmed" fz="xs">
               We might use cookies to ensure that we give you the best

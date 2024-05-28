@@ -111,11 +111,7 @@ const HeaderBar = () => {
         </a>
       </Group>
       <Tooltip label={colorScheme === "dark" ? "Light" : "Dark"}>
-        <ActionIcon
-          variant="subtle"
-          aria-label="Settings"
-          onClick={changeTheme}
-        >
+        <ActionIcon aria-label="Theme" variant="subtle" onClick={changeTheme}>
           {colorScheme === "dark" ? (
             <IconSunOff style={{ width: "70%", height: "70%" }} stroke={1.5} />
           ) : (

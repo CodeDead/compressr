@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Group, ActionIcon, rem, Title, Text } from "@mantine/core";
+import { Container, Group, ActionIcon, rem, Text } from "@mantine/core";
 import {
   IconBrandX,
   IconBrandGithub,
@@ -36,11 +36,7 @@ const Footer = () => {
   return (
     <div>
       <Container className={classes.inner}>
-        <Text
-          size="lg"
-          style={{ cursor: "pointer" }}
-          onClick={openCodeDead}
-        >
+        <Text size="lg" style={{ cursor: "pointer" }} onClick={openCodeDead}>
           © {new Date().getFullYear()} CodeDead
         </Text>
         <Group
@@ -49,13 +45,20 @@ const Footer = () => {
           justify="flex-end"
           wrap="nowrap"
         >
-          <ActionIcon size="lg" color="gray" variant="subtle" onClick={openX}>
+          <ActionIcon
+            aria-label="X"
+            size="lg"
+            color="gray"
+            variant="subtle"
+            onClick={openX}
+          >
             <IconBrandX
               style={{ width: rem(18), height: rem(18) }}
               stroke={1.5}
             />
           </ActionIcon>
           <ActionIcon
+            aria-label="Mastodon"
             size="lg"
             color="gray"
             variant="subtle"
@@ -67,6 +70,7 @@ const Footer = () => {
             />
           </ActionIcon>
           <ActionIcon
+            aria-label="Github"
             size="lg"
             color="gray"
             variant="subtle"
