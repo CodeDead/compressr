@@ -76,13 +76,14 @@ const Home = () => {
 
   useEffect(() => {
     d1(setPageIndex(0));
+    document.title = "Home | Compressr";
   }, []);
 
   if (allowCookies) {
     ReactGA.send({
       hitType: "pageview",
       page: "/",
-      title: "Home",
+      title: "Home | Compressr",
     });
   }
 

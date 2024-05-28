@@ -12,13 +12,14 @@ const About = () => {
 
   useEffect(() => {
     d1(setPageIndex(1));
+    document.title = "About | Compressr";
   }, []);
 
   if (allowCookies) {
     ReactGA.send({
       hitType: "pageview",
       page: "/about",
-      title: "About",
+      title: "About | Compressr",
     });
   }
 

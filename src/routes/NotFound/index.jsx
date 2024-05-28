@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Title, Text, Button, Container, Group } from "@mantine/core";
 import classes from "./notfound.module.css";
 import { useNavigate } from "react-router-dom";
@@ -22,9 +22,13 @@ const NotFound = () => {
     ReactGA.send({
       hitType: "pageview",
       page: "/not-found",
-      title: "Not Found",
+      title: "Not Found | Compressr",
     });
   }
+
+  useEffect(() => {
+    document.title = "Not Found | Compressr";
+  }, []);
 
   return (
     <Container className={classes.root}>
