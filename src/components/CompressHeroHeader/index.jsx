@@ -61,6 +61,7 @@ const CompressHeroHeader = ({ changePopOverOpen }) => {
 
         <Group mt={30}>
           <Button
+            aria-label="Get started"
             radius="xl"
             size="md"
             className={classes.control}
@@ -72,6 +73,7 @@ const CompressHeroHeader = ({ changePopOverOpen }) => {
             Get started
           </Button>
           <Button
+            aria-label="Source code"
             variant="default"
             radius="xl"
             size="md"
@@ -82,7 +84,11 @@ const CompressHeroHeader = ({ changePopOverOpen }) => {
           </Button>
         </Group>
       </div>
-      <Image src="/bulletpoint.svg" className={classes.image} />
+      <Image
+        alt="Bulletpoint"
+        src="/bulletpoint.svg"
+        className={classes.image}
+      />
     </div>
   );
 };

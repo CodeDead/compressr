@@ -35,7 +35,7 @@ const NotFound = () => {
         address, or the page has been moved to another URL.
       </Text>
       <Group justify="center">
-        <Button variant="subtle" size="md" onClick={goHome}>
+        <Button aria-label="Home" variant="subtle" size="md" onClick={goHome}>
           Take me back to home page
         </Button>
       </Group>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Group, ActionIcon, rem, Title } from "@mantine/core";
+import { Container, Group, ActionIcon, rem, Title, Text } from "@mantine/core";
 import {
   IconBrandX,
   IconBrandGithub,
@@ -36,9 +36,13 @@ const Footer = () => {
   return (
     <div>
       <Container className={classes.inner}>
-        <Title style={{ cursor: "pointer" }} order={4} onClick={openCodeDead}>
+        <Text
+          size="lg"
+          style={{ cursor: "pointer" }}
+          onClick={openCodeDead}
+        >
           © {new Date().getFullYear()} CodeDead
-        </Title>
+        </Text>
         <Group
           gap={0}
           className={classes.links}

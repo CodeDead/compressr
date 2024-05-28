@@ -95,6 +95,7 @@ const Home = () => {
           </Text>
           <CompressSlider value={quality} onChange={setQuality} />
           <Button
+            aria-label="Cancel"
             style={{ float: "left" }}
             mt="xl"
             leftSection={<IconCircleLetterX size={14} />}
@@ -105,12 +106,13 @@ const Home = () => {
             Cancel
           </Button>
           <Button
+            aria-label="Compress"
             style={{ float: "right" }}
             mt="xl"
             leftSection={<IconSword size={14} />}
             onClick={compressFiles}
           >
-            Compress & Download
+            Compress
           </Button>
         </Container>
       ) : (

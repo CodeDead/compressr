@@ -34,10 +34,20 @@ const CookieNotice = ({ onAccept, onDecline, onClose }) => {
               will assume that you are happy with it.
             </Text>
             <Group justify="flex-end" mt="md">
-              <Button variant="default" size="xs" onClick={onDecline}>
+              <Button
+                aria-label="Decline"
+                variant="default"
+                size="xs"
+                onClick={onDecline}
+              >
                 Decline
               </Button>
-              <Button variant="outline" size="xs" onClick={onAccept}>
+              <Button
+                aria-label="Accept"
+                variant="outline"
+                size="xs"
+                onClick={onAccept}
+              >
                 Accept
               </Button>
             </Group>

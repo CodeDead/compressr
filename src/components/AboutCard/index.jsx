@@ -77,6 +77,7 @@ const AboutCard = ({ className }) => {
         {items}
       </Group>
       <Button
+        aria-label="Donate"
         fullWidth
         radius="md"
         mt="xl"

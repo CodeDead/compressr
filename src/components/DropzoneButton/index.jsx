@@ -69,6 +69,7 @@ const DropzoneButton = ({ popOverOpen, setPopOverOpen, changeFiles }) => {
       <Popover opened={popOverOpen} onChange={setPopOverOpen}>
         <Popover.Target>
           <Button
+            aria-label="Compress"
             className={classes.control}
             size="md"
             radius="xl"
