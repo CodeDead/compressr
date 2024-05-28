@@ -2,6 +2,7 @@
     padding-top: calc(var(--mantine-spacing-xl) * 2);
     padding-bottom: calc(var(--mantine-spacing-xl) * 2);
     min-height: rem(650px);
+    margin-bottom: rem(60px);
 }
 
 .title {
@@ -15,5 +16,5 @@
 }
 
 .inner {
-    margin-top: rem(80px);
+    margin-top: rem(40px);
 }

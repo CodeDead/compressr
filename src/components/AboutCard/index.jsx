@@ -35,7 +35,7 @@ const AboutCard = ({ className }) => {
   };
 
   return (
-    <Card withBorder padding="xl" radius="md" className={className}>
+    <Card withBorder radius="md" className={className}>
       <Card.Section
         h={140}
         onClick={openCodeDead}
