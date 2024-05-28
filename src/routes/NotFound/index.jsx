@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Title, Text, Button, Container, Group } from "@mantine/core";
 import classes from "./notfound.module.css";
 import { useNavigate } from "react-router-dom";
+import ReactGA from "react-ga4";
+import { MainContext } from "../../context/MainContextProvider/index.jsx";
 
 const NotFound = () => {
+  const [state] = useContext(MainContext);
   const navigate = useNavigate();
+
+  const { allowCookies } = state;
 
   /**
    * Go to the home page
@@ -12,6 +17,14 @@ const NotFound = () => {
   const goHome = () => {
     navigate("/");
   };
+
+  if (allowCookies) {
+    ReactGA.send({
+      hitType: "pageview",
+      page: "/not-found",
+      title: "Not Found",
+    });
+  }
 
   return (
     <Container className={classes.root}>

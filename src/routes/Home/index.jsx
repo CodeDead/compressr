@@ -9,16 +9,18 @@ import classes from "./home.module.css";
 import { IconCircleLetterX, IconSword } from "@tabler/icons-react";
 import { notifications } from "@mantine/notifications";
 import Compressor from "compressorjs";
+import ReactGA from "react-ga4";
 
 const Home = () => {
   const [files, setFiles] = useState(null);
   const [popOverOpen, setpopOverOpen] = useState(false);
   const [quality, setQuality] = useState(65);
 
-  const [, d1] = useContext(MainContext);
+  const [state, d1] = useContext(MainContext);
+  const { allowCookies } = state;
 
   /**
-   * Change the pop over open state
+   * Change the popover open state
    */
   const changePopOverOpen = () => {
     setpopOverOpen((e) => !e);
@@ -75,6 +77,14 @@ const Home = () => {
   useEffect(() => {
     d1(setPageIndex(0));
   }, []);
+
+  if (allowCookies) {
+    ReactGA.send({
+      hitType: "pageview",
+      page: "/",
+      title: "Home",
+    });
+  }
 
   return (
     <Container size="md">

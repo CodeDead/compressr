@@ -48,14 +48,14 @@ const CompressHeroHeader = ({ changePopOverOpen }) => {
         >
           <List.Item>
             <b>Supports multiple formats</b> – JPEG, PNG, GIF, SVG, WebP, and
-            more!
+            more
           </List.Item>
           <List.Item>
             <b>Advanced options</b> – Decide the quality, size, and format of
             the output image
           </List.Item>
           <List.Item>
-            <b>Free and open source</b> – No ads, no tracking, no hidden costs
+            <b>Free and open source</b> – No ads and no hidden costs
           </List.Item>
         </List>
 

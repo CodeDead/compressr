@@ -24,7 +24,13 @@ const DropzoneButton = ({ popOverOpen, setPopOverOpen, changeFiles }) => {
         }}
         className={classes.dropzone}
         radius="md"
-        accept={[MIME_TYPES.png, MIME_TYPES.jpeg, MIME_TYPES.svg, MIME_TYPES.gif, MIME_TYPES.webp]}
+        accept={[
+          MIME_TYPES.png,
+          MIME_TYPES.jpeg,
+          MIME_TYPES.svg,
+          MIME_TYPES.gif,
+          MIME_TYPES.webp,
+        ]}
       >
         <div style={{ pointerEvents: "none" }}>
           <Group justify="center">
