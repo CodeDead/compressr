@@ -16,3 +16,4 @@ eslint.config.js
 .idea
 .vscode
 dist
+.github/*
