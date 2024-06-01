@@ -34,56 +34,49 @@ const Footer = () => {
   };
 
   return (
-    <div>
-      <Container className={classes.inner}>
-        <Text size="lg" style={{ cursor: "pointer" }} onClick={openCodeDead}>
-          © {new Date().getFullYear()} CodeDead
-        </Text>
-        <Group
-          gap={0}
-          className={classes.links}
-          justify="flex-end"
-          wrap="nowrap"
+    <Container className={classes.inner}>
+      <Text size="lg" style={{ cursor: "pointer" }} onClick={openCodeDead}>
+        © {new Date().getFullYear()} CodeDead
+      </Text>
+      <Group gap={0} className={classes.links} justify="flex-end" wrap="nowrap">
+        <ActionIcon
+          aria-label="X"
+          size="lg"
+          color="gray"
+          variant="subtle"
+          onClick={openX}
         >
-          <ActionIcon
-            aria-label="X"
-            size="lg"
-            color="gray"
-            variant="subtle"
-            onClick={openX}
-          >
-            <IconBrandX
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-          <ActionIcon
-            aria-label="Mastodon"
-            size="lg"
-            color="gray"
-            variant="subtle"
-            onClick={openMastodon}
-          >
-            <IconBrandMastodon
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-          <ActionIcon
-            aria-label="Github"
-            size="lg"
-            color="gray"
-            variant="subtle"
-            onClick={openGithub}
-          >
-            <IconBrandGithub
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-        </Group>
-      </Container>
-    </div>
+          <IconBrandX
+            style={{ width: rem(18), height: rem(18) }}
+            stroke={1.5}
+          />
+        </ActionIcon>
+        <ActionIcon
+          aria-label="Mastodon"
+          size="lg"
+          color="gray"
+          variant="subtle"
+          onClick={openMastodon}
+        >
+          <IconBrandMastodon
+            style={{ width: rem(18), height: rem(18) }}
+            stroke={1.5}
+          />
+        </ActionIcon>
+        <ActionIcon
+          aria-label="Github"
+          size="lg"
+          color="gray"
+          variant="subtle"
+          onClick={openGithub}
+        >
+          <IconBrandGithub
+            style={{ width: rem(18), height: rem(18) }}
+            stroke={1.5}
+          />
+        </ActionIcon>
+      </Group>
+    </Container>
   );
 };
 

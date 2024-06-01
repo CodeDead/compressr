@@ -63,13 +63,13 @@ const Home = () => {
     if (!error) {
       notifications.show({
         title: "Success",
-        message: "Hey there, your images were compressed successfully! 🤥",
+        message: "Your images have been compressed! ❤️",
       });
     } else {
       console.log(error);
       notifications.show({
         title: "Error",
-        message: "The image could not be compressed. Please try again. 😢",
+        message: "An image could not be compressed. Please try again. 🪲",
       });
     }
   };
