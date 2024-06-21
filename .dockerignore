@@ -4,7 +4,10 @@ node_modules
 build
 .dockerignore
 Dockerfile
+.yarn/*
+*/.yarn
 .pnp.*
+.yarnrc.yml
 .eslintignore
 .eslintcache
 .eslintrc.json

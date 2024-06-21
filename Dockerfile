@@ -4,13 +4,12 @@ WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 
 COPY package.json ./
-COPY yarn.lock ./
 
-RUN yarn install --silent
+RUN npm install --silent
 
 COPY . ./
 
-RUN yarn build
+RUN npm run build
 
 FROM nginx:stable-alpine
 
