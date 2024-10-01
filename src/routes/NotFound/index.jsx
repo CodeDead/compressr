@@ -18,16 +18,16 @@ const NotFound = () => {
     navigate("/");
   };
 
-  if (allowCookies) {
-    ReactGA.send({
-      hitType: "pageview",
-      page: "/not-found",
-      title: "Not Found | Compressr",
-    });
-  }
-
   useEffect(() => {
     document.title = "Not Found | Compressr";
+
+    if (allowCookies) {
+      ReactGA.send({
+        hitType: "pageview",
+        page: "/not-found",
+        title: "Not Found | Compressr",
+      });
+    }
   }, []);
 
   return (
