@@ -39,7 +39,7 @@ All other images were provided by [Mantine](https://mantine.dev/).
 
 This library is maintained by CodeDead. You can find more about us using the following links:
 * [Website](https://codedead.com/)
-* [ X ](https://twitter.com/C0DEDEAD/)
+* [Bluesky](https://bsky.app/profile/codedead.com)
 * [Facebook](https://facebook.com/deadlinecodedead/)
 * [Reddit](https://www.reddit.com/r/CodeDead/)
 

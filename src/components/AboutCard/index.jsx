@@ -2,24 +2,7 @@ import React from "react";
 import { Card, Avatar, Text, Group, Button } from "@mantine/core";
 import classes from "./aboutcard.module.css";
 
-const stats = [
-  { value: "100K+", label: "Visitors" },
-  { value: "9", label: "Donators" },
-  { value: "11", label: "Tools" },
-];
-
 const AboutCard = ({ className }) => {
-  const items = stats.map((stat) => (
-    <div key={stat.label}>
-      <Text ta="center" fz="lg" fw={500}>
-        {stat.value}
-      </Text>
-      <Text ta="center" fz="sm" c="dimmed" lh={1}>
-        {stat.label}
-      </Text>
-    </div>
-  ));
-
   /**
    * Open the donation page in a new tab
    */
@@ -74,7 +57,30 @@ const AboutCard = ({ className }) => {
         Made with ❤️ by CodeDead.
       </Text>
       <Group mt="md" justify="center" gap={30}>
-        {items}
+        <div>
+          <Text ta="center" fz="lg" fw={500}>
+            200K+
+          </Text>
+          <Text ta="center" fz="sm" c="dimmed" lh={1}>
+            Visitors
+          </Text>
+        </div>
+        <div>
+          <Text ta="center" fz="lg" fw={500}>
+            10+
+          </Text>
+          <Text ta="center" fz="sm" c="dimmed" lh={1}>
+            Donations
+          </Text>
+        </div>
+        <div>
+          <Text ta="center" fz="lg" fw={500}>
+            11
+          </Text>
+          <Text ta="center" fz="sm" c="dimmed" lh={1}>
+            FOSS tools
+          </Text>
+        </div>
       </Group>
       <Button
         aria-label="Donate"
