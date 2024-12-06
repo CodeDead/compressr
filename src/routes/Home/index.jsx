@@ -13,7 +13,7 @@ import ReactGA from "react-ga4";
 
 const Home = () => {
   const [files, setFiles] = useState(null);
-  const [popOverOpen, setpopOverOpen] = useState(false);
+  const [popOverOpen, setPopOverOpen] = useState(false);
   const [quality, setQuality] = useState(65);
 
   const [state, d1] = useContext(MainContext);
@@ -23,7 +23,7 @@ const Home = () => {
    * Change the popover open state
    */
   const changePopOverOpen = () => {
-    setpopOverOpen((e) => !e);
+    setPopOverOpen((e) => !e);
   };
 
   /**

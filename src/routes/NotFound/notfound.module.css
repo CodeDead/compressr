@@ -18,9 +18,7 @@
 
 .description {
     max-width: rem(500px);
-    margin: auto;
-    margin-top: var(--mantine-spacing-xl);
-    margin-bottom: calc(1.5 * var(--mantine-spacing-xl));
+    margin: var(--mantine-spacing-xl) auto calc(1.5 * var(--mantine-spacing-xl));
 }
 
 .title {
