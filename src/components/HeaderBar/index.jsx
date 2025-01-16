@@ -120,7 +120,7 @@ const HeaderBar = () => {
         </ActionIcon>
       </Tooltip>
 
-      <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+      <Burger aria-label="Burger menu" opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
       <Drawer
         opened={opened}
         onClose={() => toggle()}

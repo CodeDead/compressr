@@ -24,6 +24,7 @@ const DropzoneButton = ({ popOverOpen, setPopOverOpen, changeFiles }) => {
         }}
         className={classes.dropzone}
         radius="md"
+        inputProps={{ "aria-label": "Picture" }}
         accept={[
           MIME_TYPES.png,
           MIME_TYPES.jpeg,
