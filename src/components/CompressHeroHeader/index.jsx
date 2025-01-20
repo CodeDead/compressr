@@ -67,7 +67,7 @@ const CompressHeroHeader = ({ changePopOverOpen }) => {
             className={classes.control}
             onClick={() => {
               changePopOverOpen();
-              window.scrollTo(0, 0);
+              window.scrollTo(0, document.body.scrollHeight);
             }}
           >
             Get started

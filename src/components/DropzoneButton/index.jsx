@@ -3,7 +3,6 @@ import {
   Text,
   Group,
   Button,
-  rem,
   useMantineTheme,
   Popover,
 } from "@mantine/core";
@@ -36,24 +35,13 @@ const DropzoneButton = ({ popOverOpen, setPopOverOpen, changeFiles }) => {
         <div style={{ pointerEvents: "none" }}>
           <Group justify="center">
             <Dropzone.Accept>
-              <IconDownload
-                style={{ width: rem(50), height: rem(50) }}
-                color={theme.colors.blue[6]}
-                stroke={1.5}
-              />
+              <IconDownload size={50} color={theme.colors.blue[6]} stroke={1.5} />
             </Dropzone.Accept>
             <Dropzone.Reject>
-              <IconX
-                style={{ width: rem(50), height: rem(50) }}
-                color={theme.colors.red[6]}
-                stroke={1.5}
-              />
+              <IconX size={50} color={theme.colors.red[6]} stroke={1.5} />
             </Dropzone.Reject>
             <Dropzone.Idle>
-              <IconCloudUpload
-                style={{ width: rem(50), height: rem(50) }}
-                stroke={1.5}
-              />
+              <IconCloudUpload size={50} stroke={1.5} />
             </Dropzone.Idle>
           </Group>
 

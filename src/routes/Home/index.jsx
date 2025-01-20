@@ -118,12 +118,12 @@ const Home = () => {
         </Container>
       ) : (
         <>
+          <CompressHeroHeader changePopOverOpen={changePopOverOpen} />
           <DropzoneButton
             popOverOpen={popOverOpen}
             setPopOverOpen={changePopOverOpen}
             changeFiles={changeFiles}
           />
-          <CompressHeroHeader changePopOverOpen={changePopOverOpen} />
         </>
       )}
     </Container>
