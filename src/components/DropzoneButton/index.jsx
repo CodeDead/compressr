@@ -1,11 +1,5 @@
 import React, { useRef } from "react";
-import {
-  Text,
-  Group,
-  Button,
-  useMantineTheme,
-  Popover,
-} from "@mantine/core";
+import { Text, Group, Button, useMantineTheme, Popover } from "@mantine/core";
 import { Dropzone, MIME_TYPES } from "@mantine/dropzone";
 import { IconCloudUpload, IconX, IconDownload } from "@tabler/icons-react";
 import classes from "./dropzonebutton.module.css";
@@ -35,7 +29,11 @@ const DropzoneButton = ({ popOverOpen, setPopOverOpen, changeFiles }) => {
         <div style={{ pointerEvents: "none" }}>
           <Group justify="center">
             <Dropzone.Accept>
-              <IconDownload size={50} color={theme.colors.blue[6]} stroke={1.5} />
+              <IconDownload
+                size={50}
+                color={theme.colors.blue[6]}
+                stroke={1.5}
+              />
             </Dropzone.Accept>
             <Dropzone.Reject>
               <IconX size={50} color={theme.colors.red[6]} stroke={1.5} />
