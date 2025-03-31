@@ -4,23 +4,13 @@ import { Accordion, Container, Title } from "@mantine/core";
 import { MainContext } from "../../context/MainContextProvider/index.jsx";
 import { setPageIndex } from "../../reducer/MainReducer/Actions/index.js";
 import AboutCard from "../../components/AboutCard/index.jsx";
-import ReactGA from "react-ga4";
 
 const About = () => {
-  const [state, d1] = useContext(MainContext);
-  const { allowCookies } = state;
+  const [, d1] = useContext(MainContext);
 
   useEffect(() => {
     d1(setPageIndex(1));
     document.title = "About | Compressr";
-
-    if (allowCookies) {
-      ReactGA.send({
-        hitType: "pageview",
-        page: "/about",
-        title: "About | Compressr",
-      });
-    }
   }, []);
 
   return (
