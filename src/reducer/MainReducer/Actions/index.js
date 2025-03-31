@@ -1,7 +1,4 @@
-import {
-  SET_PAGE_INDEX,
-  SET_THEME_TYPE,
-} from "./ActionTypes/index.js";
+import { SET_PAGE_INDEX, SET_THEME_TYPE } from "./ActionTypes/index.js";
 
 export const setPageIndex = (index) => ({
   type: SET_PAGE_INDEX,

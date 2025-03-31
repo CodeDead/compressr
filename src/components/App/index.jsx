@@ -11,7 +11,7 @@ const About = lazy(() => import("../../routes/About"));
 const NotFound = lazy(() => import("../../routes/NotFound"));
 
 const App = () => {
-  const [state,] = useContext(MainContext);
+  const [state] = useContext(MainContext);
   const { setColorScheme } = useMantineColorScheme();
 
   const { themeType } = state;
