@@ -29,7 +29,7 @@ const AboutCard = ({ className }) => {
         }}
       />
       <Avatar
-        src="https://codedead.com/favicon.ico"
+        src="https://codedead.com/favicon.svg"
         size={80}
         radius={80}
         mx="auto"
