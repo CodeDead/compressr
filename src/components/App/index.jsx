@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <AppShell header={{ height: 60 }} footer={{ height: 115 }} padding="md">
+      <AppShell header={{ height: 60 }} footer={{ height: 100 }} padding="md">
         <AppShell.Header>
           <HeaderBar />
         </AppShell.Header>

@@ -14,7 +14,7 @@ const Footer = () => (
       style={{ cursor: "pointer" }}
       onClick={() => window.open("https://codedead.com/", "_blank")}
     >
-      © {new Date().getFullYear()} CodeDead
+      Copyright © {new Date().getFullYear()} CodeDead
     </Text>
     <Group gap={0} className={classes.links} justify="flex-end" wrap="nowrap">
       <ActionIcon
