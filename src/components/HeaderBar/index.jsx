@@ -16,13 +16,12 @@ import classes from "./headerbar.module.css";
 import { ActionIcon } from "@mantine/core";
 import { IconSun, IconSunOff } from "@tabler/icons-react";
 import { useNavigate } from "react-router-dom";
-import { setThemeType } from "../../reducer/MainReducer/Actions/index.js";
 import { MainContext } from "../../context/MainContextProvider/index.jsx";
 
 const HeaderBar = () => {
-  const { colorScheme, setColorScheme } = useMantineColorScheme();
+  const { toggleColorScheme } = useMantineColorScheme();
   const [opened, { toggle }] = useDisclosure(false);
-  const [state, d1] = useContext(MainContext);
+  const [state] = useContext(MainContext);
   const navigate = useNavigate();
 
   const { pageIndex } = state;
@@ -45,10 +44,7 @@ const HeaderBar = () => {
    * Change the color scheme
    */
   const changeTheme = () => {
-    const newTheme = colorScheme === "dark" ? "light" : "dark";
-
-    d1(setThemeType(newTheme));
-    setColorScheme(newTheme);
+    toggleColorScheme();
   };
 
   /**
@@ -110,13 +106,28 @@ const HeaderBar = () => {
           Contact
         </a>
       </Group>
-      <Tooltip label={colorScheme === "dark" ? "Light" : "Dark"}>
-        <ActionIcon aria-label="Theme" variant="subtle" onClick={changeTheme}>
-          {colorScheme === "dark" ? (
-            <IconSunOff style={{ width: "70%", height: "70%" }} stroke={1.5} />
-          ) : (
-            <IconSun style={{ width: "70%", height: "70%" }} stroke={1.5} />
-          )}
+
+      <Tooltip label="Light">
+        <ActionIcon
+          aria-label="Theme"
+          variant="subtle"
+          onClick={changeTheme}
+          lightHidden
+          visibleFrom="xs"
+        >
+          <IconSun style={{ width: "70%", height: "70%" }} stroke={1.5} />
+        </ActionIcon>
+      </Tooltip>
+
+      <Tooltip label="Dark">
+        <ActionIcon
+          aria-label="Theme"
+          variant="subtle"
+          onClick={changeTheme}
+          darkHidden
+          visibleFrom="xs"
+        >
+          <IconSunOff style={{ width: "70%", height: "70%" }} stroke={1.5} />
         </ActionIcon>
       </Tooltip>
 

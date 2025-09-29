@@ -1,4 +1,4 @@
-import { SET_PAGE_INDEX, SET_THEME_TYPE } from "./Actions/ActionTypes/index.js";
+import { SET_PAGE_INDEX } from "./Actions/ActionTypes/index.js";
 
 const MainReducer = (state, action) => {
   switch (action.type) {
@@ -6,12 +6,6 @@ const MainReducer = (state, action) => {
       return {
         ...state,
         pageIndex: action.payload,
-      };
-    case SET_THEME_TYPE:
-      localStorage.themeType = action.payload;
-      return {
-        ...state,
-        themeType: action.payload,
       };
     default:
       throw new Error();

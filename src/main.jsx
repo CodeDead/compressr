@@ -1,19 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React, { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import { MantineProvider } from "@mantine/core";
-import "@mantine/core/styles.css";
-import "@mantine/notifications/styles.css";
 import App from "./components/App";
 import MainContextProvider from "./context/MainContextProvider/index.jsx";
 import { Notifications } from "@mantine/notifications";
+import "@mantine/core/styles.css";
+import "@mantine/notifications/styles.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <MainContextProvider>
-      <MantineProvider>
-        <Notifications />
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <MantineProvider defaultColorScheme="auto">
+      <Notifications />
+      <MainContextProvider>
         <App />
-      </MantineProvider>
-    </MainContextProvider>
-  </React.StrictMode>,
+      </MainContextProvider>
+    </MantineProvider>
+  </StrictMode>,
 );
