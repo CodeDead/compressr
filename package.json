@@ -10,30 +10,30 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@mantine/core": "^8.3.2",
-    "@mantine/dropzone": "^8.3.2",
-    "@mantine/hooks": "^8.3.2",
-    "@mantine/notifications": "^8.3.2",
+    "@mantine/core": "^8.3.7",
+    "@mantine/dropzone": "^8.3.7",
+    "@mantine/hooks": "^8.3.7",
+    "@mantine/notifications": "^8.3.7",
     "@tabler/icons-react": "^3.35.0",
     "compressorjs": "^1.2.1",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "react-router-dom": "^7.9.3"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.5"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.4.0",
-    "@eslint/js": "^9.36.0",
-    "@types/react": "^19.1.15",
-    "@types/react-dom": "^19.1.9",
-    "@vitejs/plugin-react": "^5.0.4",
-    "eslint": "^9.36.0",
+    "@eslint/compat": "^1.4.1",
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "eslint": "^9.39.1",
     "eslint-plugin-react": "^7.37.5",
-    "globals": "^16.4.0",
+    "globals": "^16.5.0",
     "postcss": "^8.5.6",
     "postcss-preset-mantine": "^1.18.0",
     "postcss-simple-vars": "^7.0.1",
     "prettier": "^3.6.2",
-    "vite": "^7.1.7"
+    "vite": "^7.2.2"
   },
-  "packageManager": "yarn@4.10.3"
+  "packageManager": "yarn@4.11.0"
 }
