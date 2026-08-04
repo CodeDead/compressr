@@ -20,6 +20,10 @@ const CompressHeroHeader = ({ changePopOverOpen }) => {
     window.open("https://github.com/CodeDead/compressr", "_blank");
   };
 
+  const openDesktopApplication = () => {
+    window.open("https://codedead.com/software/compressr/", "_blank");
+  };
+
   return (
     <div className={classes.inner}>
       <div className={classes.content}>
@@ -71,6 +75,16 @@ const CompressHeroHeader = ({ changePopOverOpen }) => {
             }}
           >
             Get started
+          </Button>
+          <Button
+              aria-label="Source code"
+              variant="default"
+              radius="xl"
+              size="md"
+              className={classes.control}
+              onClick={openDesktopApplication}
+          >
+            Download
           </Button>
           <Button
             aria-label="Source code"

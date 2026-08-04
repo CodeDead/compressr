@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import classes from "./about.module.css";
-import { Accordion, Container, Title } from "@mantine/core";
+import {Accordion, Anchor, Container, Title} from "@mantine/core";
 import { MainContext } from "../../context/MainContextProvider/index.jsx";
 import { setPageIndex } from "../../reducer/MainReducer/Actions/index.js";
 import AboutCard from "../../components/AboutCard/index.jsx";
@@ -22,6 +22,18 @@ const About = () => {
         </Title>
 
         <Accordion variant="separated">
+          <Accordion.Item className={classes.item} value="download-desktop-version">
+            <Accordion.Control>
+              Is there a desktop version available?
+            </Accordion.Control>
+            <Accordion.Panel>
+              Yes! If you need improved performance or more control over your images, you can download the
+              desktop version from our website: {' '}
+              <Anchor href="https://codedead.com/software/compressr/" target="_blank">
+                Click here for more information
+              </Anchor>
+            </Accordion.Panel>
+          </Accordion.Item>
           <Accordion.Item className={classes.item} value="reset-password">
             <Accordion.Control>
               Can I create pixel art with this tool?
