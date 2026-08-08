@@ -12,7 +12,7 @@ For a live version of the application, visit [our website](https://compressr.cod
 
 ### Web
 
-You can build a web version of Advanced PassGen using `Vite` by running the following command:
+You can build a web version of `Compressr` using `Vite` by running the following command:
 
 ```shell
 yarn build
